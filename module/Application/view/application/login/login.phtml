@@ -1,0 +1,22 @@
+<?= $this->form()->openTag($form); ?>
+<br />
+Login:
+<div class="form_element">
+    <?php
+    $name = $form->get('login');
+    echo $this->formRow($name);
+    ?>
+</div>
+<div class="form_element">
+    <?php
+    $pass = $form->get('password');
+    echo $this->formRow($pass);
+    ?>
+</div>
+<div class="form_element">
+    <?php
+    $submit = $form->get('submit');
+    echo $this->formRow($submit);
+    ?>
+</div>
+<?= $this->form()->closeTag($form); ?>
